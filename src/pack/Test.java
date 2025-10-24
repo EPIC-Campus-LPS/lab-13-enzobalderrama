@@ -16,6 +16,13 @@ public class Test {
 		System.out.println(WriteCode.binarySearch(new int[]{2, 4, 6, 8, 10}, 6)); // 2
 		System.out.println(WriteCode.binarySearch(new int[]{42}, 42)); // 0
 		System.out.println(WriteCode.binarySearch(new int[]{10, 100, 1000, 10000, 100000}, 500)); // -1
+		
+		System.out.println(WriteCode.toBinary(0)); // 0
+		System.out.println(WriteCode.toBinary(1)); // 1
+		System.out.println(WriteCode.toBinary(5)); // 101
+		System.out.println(WriteCode.toBinary(10)); // 1010
+		System.out.println(WriteCode.toBinary(42)); // 101010
+
 
 	}
 

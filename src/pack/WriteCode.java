@@ -54,8 +54,19 @@ public class WriteCode {
 	 }
 	 
 	 public static int toBinary(int a) {
-		 while (a>0) {
-			 
+		 String secretint = "";
+		 if (a>0) {
+			 for (int i = 1024; i >= 1; i/=2) {
+				 int howmany = a/i;
+				 if (howmany > 0) {
+					 secretint += Integer.toString(howmany);
+					 a = a-i;
+				 }
+				 else {
+					 secretint += Integer.toString(0);
+				 }
+			 }
+			 return Integer.parseInt(secretint);
 		 }
 		 return a;
 	 }
